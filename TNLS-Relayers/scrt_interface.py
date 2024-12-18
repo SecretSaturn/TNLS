@@ -40,6 +40,7 @@ class SCRTInterface(BaseChainInterface):
         self.wallet = self.provider.wallet(self.private_key)
         self.api_url = api_url
         self.logger = getLogger()
+        self.logger.setLevel(INFO)
 
         # Initialize account number and sequence
         self.account_number = None
